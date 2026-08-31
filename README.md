@@ -1,5 +1,5 @@
 Giveaway Pro ist ein hochgradig anpassbares, professionelles Giveaway-Tool für Twitch-Streamer. Es kombiniert einen leistungsstarken Chat-Bot zur automatischen Teilnehmererfassung mit beeindruckenden, animierten OBS-Overlays.
-✨ Features (Neu in v1.1.0)
+✨ Features (Neu in v1.1.3)
 🤖 Automatischer Chat-Bot: Zuschauer tippen einfach !giveaway (anpassbar) in den Chat, um teilzunehmen.
 🎥 OBS Browser-Quellen: Animierte Slot-Machine (Rollen), aktive Giveaway-Banner und Live-Gewinnerlisten direkt im Stream.
 ⏱️ Timeout & Strike-System: Meldet sich der Gewinner nicht innerhalb der eingestellten Zeit im Chat, wird automatisch neu gezogen!
