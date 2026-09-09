@@ -1,45 +1,23 @@
-# 🚀 TwitchHub Pro (v4.0.0)
-
-**TwitchHub Pro** ist eine leistungsstarke, modulare All-in-One-Desktop-Anwendung für Twitch-Streamer. Sie vereint Chatbot-Funktionalitäten, interaktive Chat-Minigames, ein integriertes Wirtschaftssystem, automatisierte OBS-Overlays sowie Dual-PC-Steuerung über OBS WebSocket v5 in einer modernen CustomTkinter-Oberfläche.
-
-##Entwickelt von **FreeSchok Studio**.
-
----
-## ✨ Hauptfunktionen
-
-### 🎰 Interaktive Chat-Minigames
-* **5x3 Mega Slot Studio (`!megaslot`)**:
-  * 20 feste Gewinnlinien, konfigurierbare Einsätze und dynamic Multi-Spin (z. B. `!megaslot 10 5`).
-  * 3 auswählbare Visual Themes: **Ägyptischer Tempel**, **Neon Cyber** und **Klassisches Vegas**.
-  * Eigenes animiertes OBS-Overlay für maximale Immersion im Stream.
-* **Klassische Slot Machine (`!slot`)**:
-  * Retro 3-Walzen-Slot mit anpassbaren Symbolen, Gewinngewichtungen, Multiplikatoren und Jackpot-Pool.
-* **Tresor Knacken (`!safe`)**:
-  * Zuschauer versuchen, einen Zahlencode zu erraten, um den Tresor-Jackpot zu knacken.
-* **Lurk-Befehl (`!lurk`)**:
-  * Meldet Zuschauer im Chat ab und begrüßt sie automatisch bei ihrer Rückkehr.
-
-### 💰 Wirtschaftssystem & Punkte (Coins / Schokos)
-* **SQLite-Datenbank**: Sichere und performante Speicherung von Nutzer-Guthaben, Check-in-Streaks, XP und Statistiken.
-* **Belohnungssystem**:
-  * **Daily Check-in (`!checkin`)**: Täglicher Bonus mit Streak-Multiplikator.
-  * **Event-Rewards**: Automatische Punktevergabe bei Raids, Follows, Bits, Subscriptions und Sub-Gifts.
-  * **Passives Einkommen**: Automatische Coin-Belohnung für aktive Zuschauer in einstellbaren Zeitintervallen.
-* **🏆 Leaderboard-Overlay**:
-  * Modernes OBS-Overlay zur Live-Anzeige der Top-Zuschauer (Ränge, Check-in-Streaks, Coins).
-
-### 🎥 OBS Studio Integration & Dual-PC Support
-* **OBS WebSocket v5**: Direkte, latenzfreie Verbindung zu OBS Studio (unterstützt auch Dual-PC-Stream-Setups).
-* **Automatisierte Szenen & Quellen**: Automatische Steuerung von Szenenwechseln, Filter-Effekten und Overlay-Einblendungen bei Events.
-
-### 🛡️ Raid-Greeter Studio & Anti-Leak-Schutz
-* **Raid-Begrüßung**: Automatische Chat-Begrüßung inkl. Raid-Alert OBS-Overlay und optionalen Coin-Geschenken für den Raider.
-* **🔒 Anti-Leak Protection**: Automatische Bereinigung (`sanitize_safe_chat_template`), um versehentliche Leaks von Tresor-Codes oder sensiblen Daten im Chat zu verhindern.
-
-### ⚙️ Automation & Anpassung
-* **Timed Commands**: Zeitgesteuerte Intervall-Nachrichten für Social-Media-Links, Regelerinnerungen etc.
-* **Custom Commands**: Erstellung eigener Chat-Befehle direkt über die GUI.
-* **RGB Color Sliders**: Stufenlose Farbanpassung der UI-Elemente und Overlays.
-* **🌐 Multi-Sprachunterstützung (i18n)**: Vollständige Unterstützung für **Deutsch (DE)** und **Englisch (EN)**.
-* **💬 Discord Webhook Integration**: Automatische Benachrichtigungen für Giveaways und integriertes Feedback-/Bug-Reporting.
-* **🔄 Auto-Updater**: Automatische Benachrichtigung bei neuen Versionen.
+🚀 Release Notes
+Version 4.2.0
+📢 Discord Auto-Announce
+[NEU] Automatische Discord-Ankündigung bei Giveaway-Start und -Ende über euren eigenen Webhook (separat vom Entwickler-Feedback-Webhook)
+[NEU] Eigene Ein/Aus-Schalter für Start- und Ende-Ankündigung, jeweils mit editierbarem Titel & Beschreibungstext
+[NEU] Platzhalter {prize}, {sponsor}, {command}, {streamer} in den Ankündigungstexten nutzbar
+[VERBESSERT] Discord-Versand läuft asynchron im Hintergrund-Thread, damit die App nicht blockiert
+🎣 Angeln & ⛏️ Minen (neues Sammel-Minigame)
+[NEU] Chat-Befehle !fish (Angeln) und !mine (Minen), je mit eigenem konfigurierbarem Cooldown pro User
+[NEU] 6-stufige Loot-Tabelle pro Spiel (von "Alter Stiefel"/"Kieselstein" bis zur legendären "Schatztruhe"/"Mythril-Ader"), Coins-Auszahlung direkt ins bestehende Coins-System
+[NEU] Eigenes OBS-Overlay (gather_overlay.html) mit Cast-/Schwing-Animation und Rarity-basiertem Glow-Effekt (grau → blau → lila → orange → gold) inkl. Sparkle-Partikeln bei seltenen Funden
+[NEU] Loot-Tabellen direkt in der App editierbar (Name, Emoji, Gewichtung, Min/Max-Coins, Seltenheit) – kein Code-Zugriff nötig
+[NEU] Test-Buttons für sofortigen Beispiel-Fang/-Fund ohne echten Chat-Befehl
+[NEU] Beide Befehle automatisch in der Commands-Übersicht dokumentiert
+🔄 Automatischer Updater
+[NEU] Update-Fenster lädt jetzt direkt die neue .exe aus den GitHub-Release-Assets herunter, statt nur auf die Release-Seite zu verlinken
+[NEU] "Automatisch installieren"-Button mit Live-Fortschrittsanzeige (Download-%)
+[NEU] Automatischer Austausch der laufenden .exe nach dem Beenden per Helfer-Skript, inkl. automatischem Neustart der App
+[INFO] Funktioniert nur in gebauten .exe-Releases unter Windows – beim Testen als .py-Skript bleibt der Button deaktiviert
+[INFO] Setzt voraus, dass dem GitHub-Release eine .exe-Datei als Asset angehängt ist
+👋 Willkommensnachricht
+[NEU] Begrüßungsfenster beim allerersten Start einer neuen Version
+[NEU] Erscheint automatisch genau einmal pro Version (Erkennung über gespeicherte last_seen_version)
