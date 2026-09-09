@@ -2,7 +2,7 @@
 
 **TwitchHub Pro** ist eine leistungsstarke, modulare All-in-One-Desktop-Anwendung für Twitch-Streamer. Sie vereint Chatbot-Funktionalitäten, interaktive Chat-Minigames, ein integriertes Wirtschaftssystem, automatisierte OBS-Overlays sowie Dual-PC-Steuerung über OBS WebSocket v5 in einer modernen CustomTkinter-Oberfläche.
 
-Entwickelt von **FreeSchok Studio**.
+##Entwickelt von **FreeSchok Studio**.
 
 ---
 ## ✨ Hauptfunktionen
