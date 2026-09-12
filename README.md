@@ -1,23 +1,29 @@
-🚀 Release Notes
-Version 4.2.0
-📢 Discord Auto-Announce
-[NEU] Automatische Discord-Ankündigung bei Giveaway-Start und -Ende über euren eigenen Webhook (separat vom Entwickler-Feedback-Webhook)
-[NEU] Eigene Ein/Aus-Schalter für Start- und Ende-Ankündigung, jeweils mit editierbarem Titel & Beschreibungstext
-[NEU] Platzhalter {prize}, {sponsor}, {command}, {streamer} in den Ankündigungstexten nutzbar
-[VERBESSERT] Discord-Versand läuft asynchron im Hintergrund-Thread, damit die App nicht blockiert
-🎣 Angeln & ⛏️ Minen (neues Sammel-Minigame)
-[NEU] Chat-Befehle !fish (Angeln) und !mine (Minen), je mit eigenem konfigurierbarem Cooldown pro User
-[NEU] 6-stufige Loot-Tabelle pro Spiel (von "Alter Stiefel"/"Kieselstein" bis zur legendären "Schatztruhe"/"Mythril-Ader"), Coins-Auszahlung direkt ins bestehende Coins-System
-[NEU] Eigenes OBS-Overlay (gather_overlay.html) mit Cast-/Schwing-Animation und Rarity-basiertem Glow-Effekt (grau → blau → lila → orange → gold) inkl. Sparkle-Partikeln bei seltenen Funden
-[NEU] Loot-Tabellen direkt in der App editierbar (Name, Emoji, Gewichtung, Min/Max-Coins, Seltenheit) – kein Code-Zugriff nötig
-[NEU] Test-Buttons für sofortigen Beispiel-Fang/-Fund ohne echten Chat-Befehl
-[NEU] Beide Befehle automatisch in der Commands-Übersicht dokumentiert
-🔄 Automatischer Updater
-[NEU] Update-Fenster lädt jetzt direkt die neue .exe aus den GitHub-Release-Assets herunter, statt nur auf die Release-Seite zu verlinken
-[NEU] "Automatisch installieren"-Button mit Live-Fortschrittsanzeige (Download-%)
-[NEU] Automatischer Austausch der laufenden .exe nach dem Beenden per Helfer-Skript, inkl. automatischem Neustart der App
-[INFO] Funktioniert nur in gebauten .exe-Releases unter Windows – beim Testen als .py-Skript bleibt der Button deaktiviert
-[INFO] Setzt voraus, dass dem GitHub-Release eine .exe-Datei als Asset angehängt ist
-👋 Willkommensnachricht
-[NEU] Begrüßungsfenster beim allerersten Start einer neuen Version
-[NEU] Erscheint automatisch genau einmal pro Version (Erkennung über gespeicherte last_seen_version)
+# 📋 Patch Notes – Neues Update
+
+Mit diesem Update erwarten euch neue Funktionen, Verbesserungen und wichtige Fehlerbehebungen.
+
+## ✨ Neue Features
+
+### 🏁 Race-Feature
+
+Zuschauer können ab sofort selbst auf die Rennstrecke gehen und an Rennen teilnehmen. Dabei können **Coins erspielt** werden.
+
+### 🗳️ Voting-System
+
+Mit dem neuen Voting-System könnt ihr aktiv mitentscheiden, welche Features als Nächstes entwickelt werden.
+**Die zwei Features mit den meisten Stimmen** werden für die nächste Entwicklungsphase ausgewählt.
+
+### 🏠 Einrichtungs-Assistent
+
+Der neue **Einrichtungs-Assistent** führt euch Schritt für Schritt durch die Einrichtung und erleichtert den Einstieg.
+
+## 🐛 Fehlerbehebungen
+
+### 📊 Punkte-Aktualisierung
+
+Ein Fehler wurde behoben, durch den Punkte nicht unmittelbar aktualisiert wurden.
+**Punkte werden nun direkt und korrekt aktualisiert.**
+
+---
+
+Vielen Dank für euer Feedback und eure Unterstützung! ❤️
