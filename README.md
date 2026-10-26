@@ -1,107 +1,46 @@
-## 🚀 Aktuelle Version – v5.2.0
+## 🚀 Aktuelle Version – v5.2.7
 
-Das TwitchHub Giveaway Tool ist inzwischen deutlich mehr als ein klassisches Giveaway-Tool. **v5.2.0** erweitert die Anwendung um einen kompletten **Overlay Editor** – inklusive **Eigener Overlays**, in denen Spiele, Giveaways und Alerts in einer einzigen OBS-Browser-Quelle zusammenlaufen.
+# StreamDex V5.2.7
 
-### 🎁 Giveaways
+**Fix Der Teilnehmer Liste.
+** UI Reload Butten Hinzugefügt.
 
-- reguläre Giveaways
-- Quick Giveaways
-- parallele Giveaways
-- Gewinner-Management
-- Timeout-/Redraw-System
-- Gewinner-Bestätigung
-- OBS-Auslosungen
-- Giveaway-Historie und Export
+**StreamDex** ist ein leistungsstarkes, lokales Desktop- und Stream-Automationstool, das speziell für Twitch-Streamer entwickelt wurde. Es vereint Giveaways, interaktive Minispiele (Slot Machine, Chat-Angeln, Minen, Viewer-Arena, Sim Racing u.v.m.), Chat-Bot-Funktionen, Zeiterfassung (Stempeluhr), Zielbalken (Goal-Bars) sowie individuell gestaltbare OBS-Overlays in einer benutzerfreundlichen Python/CustomTkinter-Oberfläche.
 
-### 🎮 Chat Games
+---
 
-- 🎰 Slot Machine
-- 🎰 Mega Slot
-- 🎣 Fishing
-- 🌱 Farming
-- 🐙 Kraken Community Raid
-- 🏎️ Sim Racing
-- 🕹️ Viewer Arena
-- 💰 Coin-/Points-System
-- ⛏️ Mining
-- 🔐 Safe-Knacker
-- 🎁 weitere Community-Interaktionen
+## 🌟 Hauptfunktionen & Features
 
-### 🧩 Overlay Editor
+### 🎁 Giveaway & Auslosung
+* **Flexible Auslosungsarten:** Unterstützt klassisches Giveaway, Mehrfach-Ziehung (Multi-Winner) sowie automatisierte Abläufe.
+* **Umfangreiche OBS-Animationen:** 12 visuelle Ziehungsarten (z. B. Glücksrad, Unterwasser, Piratenschatz, CS:GO/Roulette, Cyberpunk Glitch, Matrix, Piñata u.v.m.).
+* **Erinnerungen & Timer:** Automatische Chat-Erinnerungen, konfigurierbarer Countdown zum Melden im Chat und Disqualifikations-Regeln bei Nichtmelden.
+* **Spam- & Multi-Account-Schutz:** Strike-System, konfigurierbare Berechtigungen und Filter für Mindest-Follower-Dauer.
 
-- 🧩 **Eigene Overlays** – beliebig viele, jedes als eigene Browser-Quelle (eine HTML-Datei)
-- 🌐 Spiele, Giveaways und Alerts einbetten – sie erscheinen weiterhin nur, wenn sie ausgelöst werden
-- 🚨 Alert Editor (Follow, Sub, Raid, Bits)
-- 🎬 Starting Soon / Pause mit Countdown
-- 🎯 Goal-Bars (Follower, Subs, Coins, eigene Ziele)
-- Drag & Drop, Ebenen-Verwaltung und automatischer Reload in OBS nach dem Speichern
+### 🎮 Interaktive Chat-Minispiele
+* **🎰 Slot Machine & 🎡 Mega Slot Studio:** 3-Walzen Slot und 5x3 Video-Slot mit 20 Gewinnlinien, Scatter-Freispielen, Progressivem Jackpot und über 40 frei wählbaren Themes (Cyberpunk, Ägypten, Vegas, Winter u.v.m.).
+* **🎣 Chat-Angeln (Ultimate Fishing System):** Dynamisches Angeln mit Gewässern, Angelruten-Upgrades, Marktpreisen (Angebot & Nachfrage), Fisch-Genetik/Loot-Tabelle, Web-Aquarium und QTE-Mechanik.
+* **⛏️ Minen & Ressourcen-Manning:** Spitzhacke schwingen, Erze/Münzen/Fundstücke freilegen und Rohstoffe für das Hüttenbau-System sammeln.
+* **🚶 2D-Viewer-Arena:** Aktive Chat-Zuschauer werden als Sprites auf dem Bildschirm gerendert. Bietet PvP-Duelle (`!duell`), kaufbare Skins/Kostüme, Pets, Mounts, Emote-Reaktionen und Sprechblasen.
+* **🏎️ Sim Racing Giveaway:** Interaktives Renn-Minispiel (`!race`) mit Echtzeit-Leaderboard und Punkte-Auszahlung für das Podest.
+* **🔐 Safe-Knacker:** Interaktives Tresor-Minispiel, bei dem Zuschauer Geheimcodes erraten können.
+* **🐙 Kraken Raid Boss:** Community-Event, bei dem Zuschauer gemeinsam einen Kraken-Boss bekämpfen.
+* **🌱 Farm Game:** Saatgut anpflanzen, gießen, ernten und geerntete Pflanzen verkaufen.
+* **🎃 Dead by Daylight Wunschliste:** Interaktives Voting für den nächsten Killer/Survivor sowie ein In-Game-Perk-Generator per Chat-Befehl.
 
-### 💰 Community-System
+### 🤖 Twitch Chat Bot & Währungssystem
+* **Punkte-/Wirtschaftssystem:** Integrierte Community-Währung (z. B. "Schokos"), Punkte für Check-ins, Aktivität, Follows, Subs, Gift-Subs, Bits und Raids sowie Punktetransfer (`!givepoints`).
+* **Automatisierter Check-in:** Täglicher Check-in (`!checkin`) mit Streaks, Level-Up-System und XP.
+* **Befehlsverwaltung:** Anpassbare Standard-Befehle, benutzerdefinierte Commands, Timed Commands (zeitgesteuerte Nachrichten) und Rollen-Berechtigungen (Streamer, Mod, VIP, Follower, Jeder).
+* **Lurk-Tool & Raid-Greeter:** Automatische Begrüßung von Raids und Unterstützung für den `!lurk`-Status.
 
-- eigene Coins
-- Follow-, Bit- und Sub-Belohnungen
-- Gift-Sub-Belohnungen
-- passive Punkte
-- `!points`
-- `!givepoints`
-- Coin-Transfers
-- Coin-Steal
-- Leaderboards
+### 🚨 OBS-Tools & Overlay-Editor
+* **Integreter HTTP-Server:** Stellt lokale HTML5/Canvas/CSS-Overlays für OBS Studio bereit.
+* **Overlay-Baukasten (Drag & Drop):** Live-Editor für Event-Alerts (Follow, Sub, Raid, Bits), Szenen (Starting Soon / Pause) sowie individuelle benutzerdefinierte Overlays.
+* **Zielbalken (Goal-Bars):** Anpassbare Fortschrittsbalken für Follower, Subs, Coins oder benutzerdefinierte Ziele.
+* **Auto-Reload:** OBS-Browserquellen aktualisieren sich bei Änderungen im Editor automatisch über die Build-ID.
 
-### 🎨 Design & OBS
-
-- Theme Studio
-- individuelle Designs
-- animierte Overlays
-- Slot-Themes
-- 30 Slot-Frame-Presets
-- Glow- und Partikeleffekte
-- OBS WebSocket
-- Dual-PC-OBS
-- Race WebSocket
-- Theme WebSocket
-
-### 🛡️ Twitch Tools
-
-- Raid Greeter
-- Stempeluhr
-- Check-in mit XP und Streak
-- Lurk-System
-- Custom Commands
-- Timed Commands
-- Feature Voting
-
-### 📊 Statistik
-
-Die Anwendung speichert und verwaltet umfangreiche Daten für Giveaways, Gewinner, Coins, Fishing, Farming, Slots, Arena und weitere Community-Systeme.
-
-Unterstützt werden außerdem **CSV- und JSON-Exporte**.
-
-### 🔄 Automatische Updates
-
-Die Anwendung besitzt ein integriertes Update-System mit GitHub-Versionsprüfung, Release-Notes-Anzeige und automatischem Update-Workflow.
-
-### 🌍 Mehrsprachigkeit
-
-Die Oberfläche unterstützt:
-
-- 🇩🇪 Deutsch
-- 🇬🇧 English
-
-### 🧩 System & Technik
-
-Die Anwendung verwendet unter anderem:
-
-- Python
-- CustomTkinter
-- SQLite
-- OBS WebSocket
-- Twitch API / Event-Systeme
-- WebSocket-basierte Live-Overlays
-- optionale Unterstützung für Pillow und Pygame
-
-## 📦 Version
-
-**Aktuelle Version: `v5.2.0`**
-
-Die Version **v5.2.0** ergänzt gegenüber **v5.0.0** den Overlay Editor mit Eigenen Overlays, Alert Editor, Starting-Soon-/Pause-Szenen und Goal-Bars.
+### ⚙️ Sonstige System-Features
+* **Stempeluhr-Integration:** Kanalpunkte-Zeiterfassung mit CSV-Export.
+* **Mehrsprachigkeit:** Vollständige Unterstützung von Deutsch (DE) und English (EN).
+* **Discord-Webhooks:** Automatische Benachrichtigungen über Giveaway-Starts, Gewinner und erstellte Clips (`!clip`).
